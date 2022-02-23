@@ -6,14 +6,19 @@ const [pokemons, setPokemons] = useState([])
 useEffect(() => {
   fetch('https://pokeapi.co/api/v2/pokemon')
     .then(response => response.json())
-    .then(res => console.log(res))
+    .then(res => setPokemons(res.results))
 })
 
   return (
     <>
-      <h3>bulbasaur</h3>
-      <span>Grass</span>
-      <span>Poison</span>
+    {pokemons.map(pokemon => (
+      <ul>
+        <h3>bulbasaur</h3>
+        <span>Grass</span>
+        <span>Poison</span>
+      </ul>
+    ))}
+      
     </>
   );
 }
