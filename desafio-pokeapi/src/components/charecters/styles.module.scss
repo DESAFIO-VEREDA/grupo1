@@ -1,0 +1,47 @@
+.charecter {
+  .content {
+    width: 230px;
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 32px 8px;
+
+    background: #ff0000;
+    border-radius: 30px;
+    .texts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      span {
+        font-weight: bold;
+        color: var(--white-100);
+      }
+
+      p {
+        color: var(--white-100);
+        background-color: #ffffff50;
+        padding: 2px 3px;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+    }
+
+    .imgs {
+      img {
+        margin: -20px 0 0 0;
+        position: absolute;
+        width: 150px;
+      }
+      img:nth-child(2) {
+        width: 200px;
+        margin: -40px 0 0 -20px;
+      }
+    }
+  }
+  &hover {
+  }
+}
