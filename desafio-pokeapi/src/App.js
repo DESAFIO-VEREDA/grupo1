@@ -1,7 +1,14 @@
+import React, {useState} from "react";
+
 export default function App() {
+const [pokemons, setPokemons] = useState([])
+
+
   return (
     <>
-      <h1>Salve</h1>
+      <h3>bulbasaur</h3>
+      <span>Grass</span>
+      <span>Poison</span>
     </>
   );
 }
